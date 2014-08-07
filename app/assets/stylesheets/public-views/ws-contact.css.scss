@@ -1,0 +1,23 @@
+#writer-sarah-app {
+  .ws-contact-icon {
+    height: 100px;
+    width: 100px;
+    margin: 15px 80px 1px 80px;
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .ws-contact-links {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+      opacity: .7;
+    }
+  }
+}

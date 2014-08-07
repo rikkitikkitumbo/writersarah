@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails Petstore: development" uuid="2d7f21c2-8fcc-446b-979b-7f363da0b8c3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Petstore: test" uuid="150f2f15-19d5-4c0a-8855-6c386d9e6deb">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Petstore: production" uuid="f688d65f-db2c-49ea-9d16-6f319b18b35e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails writersarah: development" uuid="31e9bb5c-8955-431b-b184-c6dc9cdadca0">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

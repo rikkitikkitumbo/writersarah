@@ -1,0 +1,66 @@
+#writer-sarah-app
+  #body-show-block.center-block ng-init="getArticles(); getCat()"
+    .ws-body-content-div
+      h4.ws-body-title
+        | {{getTitle()}}
+
+      p.ws-category-descript ng-hide="cat_descript_form.$visible"
+        span style="color: #777; position: absolute; margin-left: -18px; " -
+        | {{ cat.descript }}
+        button style="margin-left: 22px;" ng-click="cat_descript_form.$show()" ng-hide="cat_descript_form.$visible"
+          | edit
+        form ng-show="cat_descript_form.$visible" editable-form="" name="cat_descript_form" onaftersave="putCat(cat)"
+          span e-style="width: 640px; height: 200px;" editable-textarea="cat.descript" e-required=""
+          div ng-show="cat_descript_form.$visible" style=" margin-left: 7px;"
+            button type="submit" class="btn btn-primary btn-sm" ng-disabled="cat_descript_form.$waiting"
+              | Save
+            button type="button" class="btn btn-default btn-sm" ng-disabled="cat_descript_form.$waiting" ng-click="cat_descript_form.$cancel()"
+              | Cancel
+
+
+      li style="text-align: center; margin: 17px 0 0 0; list-style-type: none;  "
+        button ng-click="newForm.$show()" ng-hide="newForm.$visible" Add Article
+
+        form.form-inline.ws-css-form ng-show="newForm.$visible" editable-form="" name="newForm" onaftersave="saveArticle(article)"
+          span.ws-liltext ng-show="newForm.$visible" Title:
+          span e-style="width: 150px" editable-text="article.title" e-required=""
+          span.ws-liltext ng-show="newForm.$visible" Link:
+          span e-style="width: 150px" e-name="greg" editable-url="article.article_link" onbeforesave="starts_with_http($data)"  e-required=""
+          span class="editable-error" ng-show="newForm.greg.$dirty && newForm.greg.$invalid"
+            | Url should start with http://
+          span.ws-liltext ng-show="newForm.$visible" Description:
+          span e-style="width: 150px" editable-text="article.descript" e-required=""
+          div ng-show="newForm.$visible" style="display: inline; vertical-align: top; margin-left: 7px;"
+            button type="submit" class="btn btn-primary btn-sm" ng-disabled="editableForm.$waiting"
+              | Save
+            button type="button" class="btn btn-default btn-sm" ng-disabled="newForm.$waiting" ng-click="newForm.$cancel()"
+              | Cancel
+
+
+        ul style="padding: 0;" ui-sortable="sortableOptions" ng-model="articles"
+          div.ws-article-list.ws-wrap id="article_{{article.id}}" ng-repeat="article in articles track by $index" ng-hide="article == null"
+            form.form-inline.ws-css-form ng-show="editableForm.$visible" editable-form="" name="editableForm" onaftersave="putArticle(article)"
+              span.ws-liltext ng-show="editableForm.$visible" Title:
+              span e-style="width: 150px" editable-text="article.title" e-required=""
+              span.ws-liltext ng-show="editableForm.$visible" Link:
+              span e-style="width: 150px" e-name="greg" editable-url="article.article_link" onbeforesave="starts_with_http($data)" e-required=""
+              span class="editable-error" ng-show="editableForm.greg.$invalid && editableForm.greg.$dirty"
+                | Url should start with http://
+              span.ws-liltext ng-show="editableForm.$visible" Description:
+              span e-style="width: 150px" editable-text="article.descript" e-required=""
+
+              div ng-show="editableForm.$visible" style="display: inline; vertical-align: top; margin-left: 7px;"
+                button type="submit" class="btn btn-primary btn-sm" ng-disabled="editableForm.$waiting"
+                  | Save
+                button type="button" class="btn btn-default btn-sm" ng-disabled="editableForm.$waiting" ng-click="editableForm.$cancel()"
+                  | Cancel
+
+            p.ws-drag ng-hide="editableForm.$visible" [drag]
+            button ng-click="editableForm.$show()" ng-hide="editableForm.$visible"
+              | edit
+            button ng-click="deleteArticle(article)" style="margin-right: 11px;" ng-hide="editableForm.$visible"
+              | delete
+            a href="{{article.article_link}} " editable-text="article.title" onbeforesave="validateTitle($data, article)" e-form="textBtnForm" ng-hide="editableForm.$visible"
+              | {{article.title  }}
+            span.ws-article-descript ng-hide="editableForm.$visible" &nbsp - {{article.descript}}
+

@@ -1,0 +1,53 @@
+WriterSarah.config ($stateProvider, $urlRouterProvider) ->
+
+    $urlRouterProvider
+    .when('', '/about')
+    .otherwise('/')
+
+    $stateProvider
+
+    .state('app' ,
+        url: '/'
+        templateUrl: 'assets/cats/cat_index.html.slim'
+        controller: 'CatsController'
+    )
+    .state('app.show',
+        url: "category/:title"
+        templateUrl: '/assets/cats/cat_show.html.slim'
+        controller: 'CatsController'
+    )
+
+    .state('app.about',
+        url: "about"
+        templateUrl: '/assets/cats/cat_about.html.slim'
+        controller: 'CatsController'
+    )
+
+    .state('app.contact',
+        url: "contact"
+        templateUrl: '/assets/cats/cat_contact.html.slim'
+        controller: 'CatsController'
+    )
+
+
+
+    .state('edit' ,
+        url: '/'
+        templateUrl: '/assets/cats/edit/edit_cat_index.html.slim'
+        controller: 'CatsController'
+    )
+    .state('edit.show',
+        url: "edit/category/:title"
+        templateUrl: '/assets/cats/edit/edit_cat_show.html.slim'
+        controller: 'CatsController'
+    )
+    .state('edit.about',
+        url: "edit/about"
+        templateUrl: '/assets/cats/edit/edit_cat_about.html.slim'
+        controller: 'CatsController'
+    )
+    .state('edit.contact',
+        url: "edit/contact"
+        templateUrl: '/assets/cats/edit/edit_cat_contact.html.slim'
+        controller: 'CatsController'
+    );

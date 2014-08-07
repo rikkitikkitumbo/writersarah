@@ -1,0 +1,10 @@
+div.center_div
+  =simple_form_for [@article] do |f|
+
+    =f.input :title, placeholder: "article title"
+    =f.input :link, placeholder: "article link"
+    =f.input :descript, placeholder: "article description", label: "descriptionn"
+    =f.association :cat
+    =f.button :submit, 'Add Article!'
+
+

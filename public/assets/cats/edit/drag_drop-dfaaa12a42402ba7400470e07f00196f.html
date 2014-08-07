@@ -1,0 +1,19 @@
+<div ng-controller="MainCtrl" class="center_div">
+    <h2>ui.sortable event order</h2>
+
+    <div class="floatleft">
+        <ul ui-sortable="sortableOptions" ng-model="list" class="list">
+            <li ng-repeat="item in list" class="item">
+                {{item.text}}
+            </li>
+        </ul>
+    </div>
+
+    <div class="floatleft" style="margin-left: 20px;">
+        <ul class="list logList">
+            <li ng-repeat="entry in sortingLog track by $index" class="logItem">
+                {{entry}}
+            </li>
+        </ul>
+    </div>
+</div>

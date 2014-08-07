@@ -1,0 +1,30 @@
+#writer-sarah-app {
+  .ws-liltext {
+    font-size: 12px;
+    margin: 0px 4px;
+  }
+
+  .ws-css-form input.ng-invalid.ng-dirty {
+    background-color: #ffa4a4;
+  }
+
+  .ws-css-form input.ng-valid.ng-dirty {
+    background-color: #b4e49e;
+  }
+
+  .ws-wrap {
+    background: linear-gradient(#fff, #ddd);
+    border-radius: 6px;
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px #aaa;
+  }
+
+  .ws-drag {
+    margin: 2px 0 0 10px;
+    float: left;
+    color: #777;
+    &:hover {
+      cursor: all-scroll;
+    }
+  }
+}

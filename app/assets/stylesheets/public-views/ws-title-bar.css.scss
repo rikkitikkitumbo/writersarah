@@ -1,0 +1,56 @@
+
+#writer-sarah-app {
+
+  .ws-header-bg {
+    background: -webkit-linear-gradient(#efefef, #cbcbcb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#efefef, #cbcbcb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#efefef, #cbcbcb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eee, #ccc);
+    box-shadow: 12px 2px 6px 2px #777;
+  }
+
+  .ws-titlebar-font {
+    display: inline;
+    font-size: 41px;
+    font-weight: 400;
+    //font-family: 'Alegreya Sans SC', sans-serif;
+    //font-family: 'Syncopate', sans-serif;
+    //font-family: 'Russo One', sans-serif;
+    //font-family: 'Playfair Display SC', serif;
+    //font-family: 'Squada One', cursive;
+    font-family: 'Cinzel', serif;
+    //font-family: 'Voltaire', sans-serif;
+    //font-family: 'Homenaje', sans-serif;
+
+  }
+
+  .ws-header-links {
+    padding: 16px 0px 16px 0;
+    width: 610px;
+    float: right;
+    margin-right: 70px;
+    vertical-align: top;
+      .header-a {
+        padding: 18px 21px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        border-left: 1px solid #999;
+        &:hover {
+          background: linear-gradient(#bbb, #888);
+          color: white;
+          box-shadow: 2px 0 2px #777;
+        }
+      }
+    }
+
+
+  .active {
+    background: -webkit-linear-gradient(black, #ededed); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #ededed); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #ededed); /* For Firefox 3.6 to 15 */
+    box-shadow: 2px 2px 2px #999;
+    background: linear-gradient(#bbb, #888);
+    color: white !important;
+  }
+}
