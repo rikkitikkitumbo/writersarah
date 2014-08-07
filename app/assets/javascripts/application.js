@@ -11,4 +11,14 @@
 // about supported directives.
 //
 
+
+//= require jquery.min
+//= require bootstrap.min
+//= require angular.min
+//= require angular-animate.min
+//= require xeditable.min
+//= require sortable.min
+//= require angular-ui-router.min
+//= require lodash.min
+//= require restangular.min
 //= require custom.min.js
