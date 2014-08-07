@@ -123,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/templates/cats/cat_contact.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/edit-views/ws-x-editable.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/articles.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular/fadein-body.js.coffee" />
@@ -174,6 +173,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_head.html.slim" />
         <option value="$PROJECT_DIR$/public/assets/application-028a750e8c0b812d97461f8e21c598f4.js" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/custom.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/manifest-825a4849ad6a7a62b8f985f7e4a7de0a.json" />
       </list>
     </option>
   </component>
@@ -753,10 +753,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1938" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3024055" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="25" y="416" width="1898" height="199" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3115693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="25" y="389" width="1870" height="272" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
