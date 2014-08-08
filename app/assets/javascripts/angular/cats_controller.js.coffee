@@ -77,7 +77,7 @@ WriterSarah.controller "CatsController", ["$scope", "$http", "Restangular", "$st
     id = $scope.paramsId()
     if confirm('Are you sure you want to delete "' + article.title + '"?')
       indexx = $scope.articles.indexOf(article)
-      $http.delete('api/v1/cats/' + id + '/articles/' + article.id).then ->
+      Restangular.one('api/v1/cats/' + id + '/articles/' + article.id).remove().then ->
         $scope.articles.removeAt(indexx)
         console.log('deleted ' + indexx)
 
