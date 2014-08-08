@@ -1,1 +1,1 @@
-run "cd /srv/www/writersarah/current && /usr/local/bin/bundle exec rake assets:precompile"
+# run "cd /srv/www/writersarah/current && /usr/local/bin/bundle exec rake assets:precompile"
