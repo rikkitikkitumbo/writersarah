@@ -46,7 +46,7 @@ gem 'has_scope'
 gem 'acts_as_list'
 gem 'execjs'
 gem 'aws-sdk'
-
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'
@@ -55,6 +55,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 
