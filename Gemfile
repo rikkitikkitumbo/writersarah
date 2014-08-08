@@ -6,7 +6,7 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mysql2'
+#gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -46,6 +46,18 @@ gem 'has_scope'
 gem 'acts_as_list'
 gem 'execjs'
 gem 'aws-sdk'
+
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+
 
 #gem 'less-rails'
 
