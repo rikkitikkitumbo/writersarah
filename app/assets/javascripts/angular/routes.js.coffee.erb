@@ -1,32 +1,41 @@
-WriterSarah.config ($stateProvider, $urlRouterProvider) ->
+greg = () ->
+    if window.location.toString() == "http://localhost:3000/#/edit/about"
+        window.location.replace("http://localhost:3000/admin/#/edit/about")
+    else if window.location.toString() == "http://localhost:3000/#edit/about"
+        window.location.replace("http://localhost:3000/admin/#/edit/about")
+greg()
+
+
+
+WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $urlRouterProvider) ->
 
     $urlRouterProvider
     .when('', '/about')
-    .otherwise('/')
+    .otherwise('/about')
 
     $stateProvider
 
     .state('app' ,
         url: '/'
         templateUrl: 'assets/cats/cat_index.html.slim'
-        controller: 'CatsController'
+        controller: 'PublicController'
     )
     .state('app.show',
         url: "category/:title"
         templateUrl: '/assets/cats/cat_show.html.slim'
-        controller: 'CatsController'
+        controller: 'PublicController'
     )
 
     .state('app.about',
         url: "about"
         templateUrl: '/assets/cats/cat_about.html.slim'
-        controller: 'CatsController'
+        controller: 'PublicController'
     )
 
     .state('app.contact',
         url: "contact"
         templateUrl: '/assets/cats/cat_contact.html.slim'
-        controller: 'CatsController'
+        controller: 'PublicController'
     )
 
 
@@ -51,3 +60,4 @@ WriterSarah.config ($stateProvider, $urlRouterProvider) ->
         templateUrl: '/assets/cats/edit/edit_cat_contact.html.slim'
         controller: 'CatsController'
     );
+]

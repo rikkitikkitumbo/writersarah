@@ -11,4 +11,4 @@
 // about supported directives.
 //
 
-//= require custom.min.js
+//= require publicfiles.js

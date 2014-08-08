@@ -1,4 +1,5 @@
-#writer-sarah-app
+
+#writer-sarah-app ng-controller="CatsController" ng-cloak=""
   #body-show-block.center-block ng-init="getArticles(); getCat()"
     .ws-body-content-div
       h4.ws-body-title
@@ -63,4 +64,5 @@
             a href="{{article.article_link}} " editable-text="article.title" onbeforesave="validateTitle($data, article)" e-form="textBtnForm" ng-hide="editableForm.$visible"
               | {{article.title  }}
             span.ws-article-descript ng-hide="editableForm.$visible" &nbsp - {{article.descript}}
+
 

@@ -8,6 +8,6 @@ head
   = csrf_meta_tags
   = stylesheet_link_tag "application.css", :media => "all"
   <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-  = javascript_include_tag "publicfiles.js"
+  = javascript_include_tag "editfiles.js"
 
 div ng-app="WriterSarah" ui-view="" ng-init="authenticated = '#{@user_authenticated}'; user_email= '#{@user_email}'"
