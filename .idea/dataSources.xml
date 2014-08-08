@@ -21,20 +21,20 @@
     </data-source>
     <data-source source="LOCAL" name="Rails writersarah: development" uuid="31e9bb5c-8955-431b-b184-c6dc9cdadca0">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\greg\RubymineProjects\writersarah\db\development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:dbdev</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails writersarah: test" uuid="d5494e07-221d-441b-a529-bb449f13340c">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\greg\RubymineProjects\writersarah\db\test.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:dbtest</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails writersarah: production" uuid="b5383506-b430-444f-9048-96552736d02b">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\greg\RubymineProjects\writersarah\db\production.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:dbpro</jdbc-url>
       <libraries />
     </data-source>
   </component>

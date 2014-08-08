@@ -17,6 +17,8 @@ Cat.all.each do |cat|
   end
 end
 
+User.create(email: "s@s.com", password: 12345678)
+
 
 
 
