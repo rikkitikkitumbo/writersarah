@@ -12,4 +12,10 @@
   <data-source source="LOCAL" name="Rails writersarah: development" uuid="31e9bb5c-8955-431b-b184-c6dc9cdadca0">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails writersarah: test" uuid="d5494e07-221d-441b-a529-bb449f13340c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails writersarah: production" uuid="b5383506-b430-444f-9048-96552736d02b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
