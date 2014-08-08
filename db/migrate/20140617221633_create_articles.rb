@@ -10,7 +10,7 @@ class CreateArticles < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :articles, [:title, :article_link, :descript, :cat_id, :cat_title]
+    add_index :articles, [:title]
   end
 
 end
