@@ -12,6 +12,7 @@ Writersarah::Application.routes.draw do
     end
   end
 
+  get "admin", to: "admins#index"
   get "allarticles", to: "allarticles#index"
   resources :allarticles
 

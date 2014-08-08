@@ -1,4 +1,4 @@
-WriterSarah.controller "CatsController", ($scope, $http, Restangular, $stateParams) ->
+WriterSarah.controller "CatsController", ["$scope", "$http", "Restangular", "$stateParams", ($scope, $http, Restangular, $stateParams) ->
 
   $scope.sortableOptions =
     stop: () ->
@@ -104,3 +104,4 @@ WriterSarah.controller "CatsController", ($scope, $http, Restangular, $statePara
     cat.put().then ->
       $scope.cat = cat
 
+]
