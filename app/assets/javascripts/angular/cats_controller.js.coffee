@@ -20,6 +20,7 @@ WriterSarah.controller "CatsController", ["$scope", "$http", "Restangular", "$st
 
   $scope.getCat = () ->
     id = $scope.paramsId()
+    console.log(id)
     Restangular.one('api/v1/cats', id).get().then (response) ->
       $scope.cat = response
 
@@ -55,9 +56,9 @@ WriterSarah.controller "CatsController", ["$scope", "$http", "Restangular", "$st
 
   $scope.MakeCat_id = (article) ->
     switch
-      when article.cat_title == "Magazine"
+      when article.cat_title == "Press"
         article.cat_id = 1
-      when article.cat_title == "Coorperate Copywright"
+      when article.cat_title == "Corporate Copyright"
         article.cat_id = 2
       when article.cat_title == "Novels"
         article.cat_id = 3

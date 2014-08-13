@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Cat.create(title: "Magazine", descript: "My articles always go #1!!", order_array: "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
-Cat.create(title: "Coorperate Copywright", descript: "I'll make you look so professional you won't need to wear a suit and tie!!!", order_array: "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
+Cat.create(title: "Press", descript: "My articles always go #1!!", order_array: "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
+Cat.create(title: "Corporate Copyright", descript: "I'll make you look so professional you won't need to wear a suit and tie!!!", order_array: "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
 Cat.create(title: "Novels", descript: "I have written two novels, and they are both available at Amazon.com", order_array: "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
 
 
@@ -18,8 +18,5 @@ Cat.all.each do |cat|
 end
 
 User.create(email: "s@s.com", password: 12345678)
-
-
-
 
 

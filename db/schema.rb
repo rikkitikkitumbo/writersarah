@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20140725054742) do
     t.datetime "updated_at"
   end
 
+  add_index "articles", ["title"], name: "index_articles_on_title"
+
   create_table "cats", force: true do |t|
     t.string   "title"
     t.string   "descript"
@@ -30,6 +32,8 @@ ActiveRecord::Schema.define(version: 20140725054742) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "cats", ["title", "descript", "order_array"], name: "index_cats_on_title_and_descript_and_order_array"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
