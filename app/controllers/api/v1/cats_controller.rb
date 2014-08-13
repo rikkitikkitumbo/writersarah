@@ -3,7 +3,7 @@ class Api::V1::CatsController < ApiController
   PERMITTED = :title, :descript, :order_array
 
     def index
-      respond_with Cat.all, root: false, each_serializer: CatSerializer
+      respond_with Cat.all.sort_by{|cat| cat.id}, root: false, each_serializer: CatSerializer
     end
 
     def create
