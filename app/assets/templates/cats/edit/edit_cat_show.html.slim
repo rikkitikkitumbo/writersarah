@@ -2,10 +2,10 @@
 #writer-sarah-app ng-controller="CatsController" ng-cloak=""
   #body-show-block.center-block ng-init="getArticles(); getCat()"
     .ws-body-content-div
-      h4.ws-body-title
+      /h4.ws-body-title
         | {{getTitle()}}
 
-      p.ws-category-descript ng-hide="cat_descript_form.$visible"
+      /p.ws-category-descript ng-hide="cat_descript_form.$visible"
         span style="color: #777; position: absolute; margin-left: -18px; " -
         | {{ cat.descript }}
         button style="margin-left: 22px;" ng-click="cat_descript_form.$show()" ng-hide="cat_descript_form.$visible"

@@ -34,11 +34,12 @@ WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $ur
         controller: 'PublicController'
     )
 
-    .state('app.contact',
+   ###.state('app.contact',
         url: "contact"
         templateUrl: '/assets/cats/cat_contact.html.slim'
         controller: 'PublicController'
     )
+###
 
 
 
@@ -57,9 +58,9 @@ WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $ur
         templateUrl: '/assets/cats/edit/edit_cat_about.html.slim'
         controller: 'CatsController'
     )
-    .state('edit.contact',
+ ###   .state('edit.contact',
         url: "edit/contact"
         templateUrl: '/assets/cats/edit/edit_cat_contact.html.slim'
         controller: 'CatsController'
-    );
+    );###
 ]

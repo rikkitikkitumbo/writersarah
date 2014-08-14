@@ -1,52 +1,47 @@
+
+#ws-login-info style=" margin: 0 0 0 0;  width: 680px; "
+  a ng-hide="user_authenticated()" href="/users/sign_in/" style="color: #444; background: #fff; font-size: 12px;"
+    | login
+  div ng-show="user_authenticated()" style="font-size: 12px; display: inline;"
+    div ng-show="user_authenticated()" style="font-size: 12px; display: inline;"
+      | Logged in as <strong> {{user_email}}  </strong>
+    a href="/users/edit"
+      | Edit User
+    a href="/users/sign_out" data-method="delete"
+      | Logout
+    a href="/admin/#edit/about"
+      | Edit the Website :)
+
 #writer-sarah-app
+  #ws-title-bar.ws-header-bg
+    /.ws-titlebar-font Sarah Miller
 
-  .container-fluid
+    .ws-about-div
+      a.ws-titlebar-font ui-sref="app.about"
+        | Sarah Miller
+      | &nbsp has written &nbsp
+      a.a ui-sref="app.show({title: 'Press'})" 100's of articles.
+      | &nbsp She has also written &nbsp
+      a.a ui-sref="app.show({title: 'Novels'})" 2 novels
+      | &nbsp and has done &nbsp
+      a.a ui-sref="app.show({title: 'Corporate Copyright'})" corporate copyright
+      | &nbsp work.
 
-    #title-bar.row.ws-header-bg style="margin-top: 21px;"
-      div style="margin-top: 5px; margin-bottom: 2px; width: 530px; float: left; padding-left: 70px;"
-        h1.ws-titlebar-font Sarah Miller
-        h4 style="display:  inline;  color: grey; font-size: 17px;"<em> &nbsp - Writer</em>
+  #ws-sm-title-bar.ws-header-bg
+    /.ws-titlebar-font Sarah Miller
 
-      .ws-header-links ng-init="gettCats()"
-        a.header-a ui-sref-active="active" ui-sref="app.about"
-          | About
-        a.header-a ng-repeat="cat in cats" ui-sref-active="active" ui-sref="app.show({ title: cat.title })"
-          | {{cat.title}}
-        a.header-a ui-sref-active="active" ui-sref="app.contact" style="border-right: 1px solid #999;"
-          | Contact
-
-    #sm-sarah-miller.row.ws-header-bg
-      div style="margin-top: 5px; margin-bottom: 2px; text-align: center;"
-        h1.ws-titlebar-font Sarah Miller
+    .ws-about-div
+      a.a.ws-a-big href="mailto:sarahpetersmiller@gmail.com" target="_blank"
+        | Sarah Miller
+      | &nbsp has written &nbsp
+      a.a ui-sref="app.show({title: 'Press'})" 100's of Articles.
+      | &nbsp She has also written &nbsp
+      a.a ui-sref="app.show({title: 'Novels'})" 2 novels
+      | &nbsp and has done &nbsp
+      a.a ui-sref="app.show({title: 'Corporate Copyright'})" corporate copyright
+      | &nbsp work.
 
 
-    #sm-title-bar.row.ws-header-bg style="margin-top: 10px;"
-      div style="text-align: center; margin-top: 5px; margin-bottom: 2px;"
-        h1.ws-titlebar-font Sarah Miller
-        h4 style="display: inline; color: grey; font-size: 17px;"<em> &nbsp - Writer</em>
+  .ui-view-container
+    div ui-view="" class="ws-fade-inout"
 
-      ul
-        a.header-a ui-sref-active="active" ui-sref="app.about"
-          | About
-        a.header-a ng-repeat="cat in cats" ui-sref-active="active" ui-sref="app.show({ title: cat.title })"
-          | {{cat.title}}
-        a.header-a ui-sref-active="active" ui-sref="app.contact" style="border-right: 1px solid #999;"
-          | Contact
-
-    .ui-view-container
-      div ui-view="" class="ws-fade-inout"
-
-  div style="clear: both; margin: 0 0 0 83%; height: 120px; width: 180px; "
-    div
-      a ng-hide="user_authenticated()" href="/users/sign_in/" style="color: #444; background: #bbb; font-size: 12px;"
-        | login
-      div ng-show="user_authenticated()" style="float: right; font-size: 12px;"
-        div style="background: #bbb;"
-          | Logged in as <strong> {{user_email}}  </strong> <br>
-        a href="/users/edit" style=" background: #bbb;"
-          | Edit User <br>
-        a href="/users/sign_out" data-method="delete" style=" background: #bbb;"
-          | Logout
-        <br><br>
-        a href="/admin/#edit/about" style=" background: #bbb;"
-          | Edit the Website :)

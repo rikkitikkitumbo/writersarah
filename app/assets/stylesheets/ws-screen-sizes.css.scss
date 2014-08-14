@@ -1,111 +1,77 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-  #sm-title-bar{
+  #ws-sm-title-bar{
     display: none
   }
   #body-show-block{
-    width: 50%;
-  }
-  #body-about-block{
     width: 60%;
   }
-  #sm-sarah-miller{
-    display: none;
+  #ws-article-container{
+    width: 50%;
   }
-
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  #title-bar{
-    display: none;
-  }
-  #sm-title-bar{
+  #ws-sm-title-bar{
     display: block;
-    ul{
-      a{
-        display: block;
-      }
-    }
+  }
+  #ws-title-bar{
+    display: none;
   }
   #body-show-block{
+    width: 100%;
+  }
+  #ws-article-container{
     width: 50%;
   }
-  #body-about-block{
-    width: 60%;
-  }
-  #sm-sarah-miller{
-    display: none;
-  }
+
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  #title-bar{
+  #ws-sm-title-bar{
+    display: block;
+  }
+  #ws-title-bar{
     display: none;
   }
-  #sm-title-bar{
-    display: block;
-    ul{
-      a{
-        display: block;
-      }
-    }
-  }
-  #body-show-block, #body-about-block{
+  #body-show-block{
     width: 100%;
   }
-  #sm-sarah-miller{
-    display: none;
+  #ws-article-container{
+    width: 100%;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  #title-bar{
+  #ws-sm-title-bar{
+    display: block;
+  }
+  #ws-title-bar{
     display: none;
   }
-  #sm-title-bar{
-    display: block;
-    ul{
-      a{
-        display: block;
-      }
-    }
-  }
-  #body-show-block, #body-about-block{
+  #body-show-block{
     width: 100%;
   }
-  #sm-sarah-miller{
-    display: none;
+  #ws-article-container{
+    width: 100%;
   }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  #title-bar{
+  #ws-sm-title-bar{
+    display: block;
+  }
+  #ws-title-bar{
     display: none;
   }
-  #sm-title-bar{
-    display: block;
-    div{
-      display: none;
-    }
-    ul{
-      a{
-        display: block;
-      }
-    }
-  }
-  #body-show-block, #body-about-block{
+  #body-show-block{
     width: 100%;
   }
-  .ws-body-content-div{
-    p{
-      display: none;
-    }
-  }
-  #sm-sarah-miller{
-    display: block;
+  #ws-article-container{
+    width: 100%;
   }
 }

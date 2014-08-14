@@ -3,11 +3,23 @@
     background: -webkit-linear-gradient(#efefef, #cbcbcb); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#efefef, #cbcbcb); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#efefef, #cbcbcb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#eee, #ccc);
-    box-shadow: 3px 3px 6px 3px #777;
-    border-radius: 7px;
+    background: linear-gradient(#fff, #ddd);
+    box-shadow: 2px 2px 6px 2px #999;
+    border-radius: 3px;
     padding: 10px 10px 15px 10px;
     margin-top: 21px;
+  }
+
+  .body-img{
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    margin: 15px 0 0 30px;
+    vertical-align: top;
+    @media (max-width: 767px){
+    height: 250px;
+    width: 250px;
+    }
   }
 
   .ws-body-title {
@@ -19,21 +31,37 @@
 
   .ws-category-descript {
     color: #777;
-    //border-left: 2px solid #999;
     padding: 1px 10px;
     font-size: 14px;
     margin: 2px 4em 15px;
   }
 
+  #ws-article-container{
+    margin-top: 15px;
+    display: inline-block;
+  }
+
   .ws-article-list {
     list-style-type: none;
-    margin: 10px 0 0 0;
-    text-align: center;
+    margin: 10px 0 0 70px;
+    text-align: left;
+    @media (max-width: 767px) {
+        margin: 2px 4px;
+    }
+    a{
+      font-size: 15px;
+      color: #444;
+      border-bottom: 1px dashed #444;
+      &:hover{
+        color: #333;
+        border-bottom: 2px solid #333;
+      }
+    }
   }
 
   .ws-article-descript {
     font-weight: normal;
-    color: #777;
+    color: #888;
     font-size: 14px;
     font-style: italic;
   }

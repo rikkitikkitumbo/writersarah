@@ -1,10 +1,11 @@
 
 
+
 #writer-sarah-app ng-cloak=""
-  .container-fluid
-    div ng-show="user_authenticated()"
-      div.row style="background: #bbb; line-height: 41px"
-        div.col-md-4.list-inline
+  div ng-show="user_authenticated()"
+    div ng-show="user_authenticated()" style="width: 99%;"
+      div.row style="background: #bbb; line-height: 41px; padding: 0 0 0 20px;"
+        div.col-md-3.list-inline
           li
             | Logged in as <strong> {{user_email}} </strong>
           li
@@ -13,51 +14,46 @@
           li
             a href="/users/sign_out" data-method="delete"
               | Logout
-        div.col-md-4.col-md-offset-4 style=" color: red;"
+        div.col-md-3.col-md-offset-4 style=" color: red;"
           | You are in Edit Mode!! &nbsp
           a href="/"
             | Click here to see Public View
 
 
-    div ng-show="user_authenticated()"
-      #title-bar.row.ws-header-bg style="margin-top: 21px;"
-        div style="margin-top: 5px; margin-bottom: 2px; width: 530px; float: left; padding-left: 70px;"
-          h1.ws-titlebar-font Sarah Miller
-          h4 style="display: inline; color: grey; font-size: 17px; "<em> &nbsp - Writer</em>
+    #ws-title-bar.ws-header-bg
+      /.ws-titlebar-font Sarah Miller
 
-        .ws-header-links ng-init="gettCats()"
-          a.header-a ui-sref-active="active" ui-sref="edit.about"
-            | About
-          a.header-a ng-repeat="cat in cats" ui-sref-active="active" ui-sref="edit.show({ title: cat.title })"
-            | {{cat.title}}
-          a.header-a ui-sref-active="active" ui-sref="edit.contact" style="border-right: 1px solid #999;"
-            | Contact
+      .ws-about-div
+        a.ws-titlebar-font href="mailto:sarahpetersmiller@gmail.com" target="_blank"
+          | Sarah Miller
+        | &nbsp has written &nbsp
+        a.a ui-sref="edit.show({title: 'Press'})" 100's of articles.
+        | &nbsp She has also written &nbsp
+        a.a ui-sref="edit.show({title: 'Novels'})" 2 novels
+        | &nbsp and has done &nbsp
+        a.a ui-sref="edit.show({title: 'Corporate Copyright'})" corporate copyright
+        | &nbsp work.
 
-      #sm-sarah-miller.row.ws-header-bg
-        div style="margin-top: 5px; margin-bottom: 2px; "
-          h1.ws-titlebar-font Sarah Miller
+    #ws-sm-title-bar.ws-header-bg
+      /.ws-titlebar-font Sarah Miller
 
-
-      #sm-title-bar.row.ws-header-bg style="margin-top: 21px;"
-        div style="text-align: center; margin-top: 5px; margin-bottom: 2px;"
-          h1.ws-titlebar-font  Sarah Miller
-          h4 style="display: inline; color: grey; font-size: 17px;"<em> &nbsp - Writer</em>
-
-        ul ng-init="gettCats()"
-          a.header-a ui-sref-active="active" ui-sref="app.about"
-            | About
-          a.header-a ng-repeat="cat in cats" ui-sref-active="active" ui-sref="app.show({ title: cat.title })"
-            | {{cat.title}}
-          a.header-a ui-sref-active="active" ui-sref="app.contact" style="border-right: 1px solid #999;"
-            | Contact
+      .ws-about-div
+        a.a.ws-a-big href="mailto:sarahpetersmiller@gmail.com" target="_blank"
+          | Sarah Miller
+        | &nbsp has written &nbsp
+        a.a ui-sref="edit.show({title: 'Press'})" 100's of Articles.
+        | &nbsp She has also written &nbsp
+        a.a ui-sref="edit.show({title: 'Novels'})" 2 novels
+        | &nbsp and has done &nbsp
+        a.a ui-sref="edit.show({title: 'Corporate Copyright'})" corporate copyright
+        | &nbsp work.
 
 
+    .ui-view-container
+      div ui-view="" class="ws-fade-inout"
 
-      .ui-view-container
-        div ui-view="" class="ws-fade-inout"
-
-  .body_content_div style="text-align:center; color: red; font-size: 18px;" ng-hide="user_authenticated()"
-    | You aren't logged in. &nbsp
-    a href="/users/sign_in"
-      | Click here to log in
+.body_content_div style="text-align:center; color: red; font-size: 18px; background: #fff;" ng-hide="user_authenticated()"
+  | You aren't logged in. &nbsp
+  a href="/users/sign_in"
+    | Click here to log in
 
