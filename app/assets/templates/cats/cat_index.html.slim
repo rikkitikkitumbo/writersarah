@@ -1,19 +1,6 @@
 #writer-sarah-app
+
   .container-fluid
-    div style="position: relative;"
-      div style="position: absolute; margin: 555px 0 0 93%;"
-        a ng-hide="user_authenticated()" href="/users/sign_in/" style="color: #444; background: grey; font-size: 12px;"
-          | login
-        div ng-show="user_authenticated()" style="float: right; font-size: 12px;"
-          div style="background: #bbb;"
-            | Logged in as <strong> {{user_email}}  </strong> <br>
-          a href="/users/edit" style=" background: #bbb;"
-            | Edit User <br>
-          a href="/users/sign_out" data-method="delete" style=" background: #bbb;"
-            | Logout
-          <br><br>
-          a href="/admin/#edit/about" style=" background: #bbb;"
-            | Edit the Website :)
 
     #title-bar.row.ws-header-bg style="margin-top: 21px;"
       div style="margin-top: 5px; margin-bottom: 2px; width: 530px; float: left; padding-left: 70px;"
@@ -49,3 +36,17 @@
     .ui-view-container
       div ui-view="" class="ws-fade-inout"
 
+  div style="clear: both; margin: 0 0 0 83%; height: 120px; width: 180px; "
+    div
+      a ng-hide="user_authenticated()" href="/users/sign_in/" style="color: #444; background: #bbb; font-size: 12px;"
+        | login
+      div ng-show="user_authenticated()" style="float: right; font-size: 12px;"
+        div style="background: #bbb;"
+          | Logged in as <strong> {{user_email}}  </strong> <br>
+        a href="/users/edit" style=" background: #bbb;"
+          | Edit User <br>
+        a href="/users/sign_out" data-method="delete" style=" background: #bbb;"
+          | Logout
+        <br><br>
+        a href="/admin/#edit/about" style=" background: #bbb;"
+          | Edit the Website :)
