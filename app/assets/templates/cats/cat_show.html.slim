@@ -8,6 +8,7 @@
         | {{ cat.descript }}
 
       #ws-article-container
+        img.body-img.ws-about-descript src="#"
         div.ws-article-list id="article_{{article.id}}" ng-repeat="article in articles track by $index" ng-hide="article == null"
 
 
@@ -15,4 +16,3 @@
             | {{article.title  }}
           span.ws-article-descript ng-hide="editableForm.$visible" &nbsp - {{article.descript}}
 
-      img.body-img.ws-about-descript src="#"
