@@ -11,4 +11,4 @@
 // about supported directives.
 //
 
-//= require editfiles.js
+//= require publicfiles.js
