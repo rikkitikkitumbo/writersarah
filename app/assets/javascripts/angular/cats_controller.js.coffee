@@ -33,9 +33,9 @@ WriterSarah.controller "CatsController", ["$scope", "$http", "Restangular", "$st
 
   $scope.paramsId = () ->
     switch
-      when $stateParams.title == "Magazine"
+      when $stateParams.title == "Press"
         1
-      when $stateParams.title == "Coorperate Copywright"
+      when $stateParams.title == "Corporate Copyright"
         2
       when $stateParams.title == "Novels"
         3
