@@ -12,8 +12,8 @@ greg()
 WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $urlRouterProvider) ->
 
     $urlRouterProvider
-    .when('', '/about')
-    .otherwise('/about')
+    .when('', '/category/Press')
+    .otherwise('/category/Press')
 
     $stateProvider
 
@@ -28,13 +28,6 @@ WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $ur
         controller: 'PublicController'
     )
 
-    .state('app.about',
-        url: "about"
-        templateUrl: '/assets/cats/cat_about.html.slim'
-        controller: 'PublicController'
-    )
-
-
 
 
 
@@ -46,11 +39,6 @@ WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $ur
     .state('edit.show',
         url: "edit/category/:title"
         templateUrl: '/assets/cats/edit/edit_cat_show.html.slim'
-        controller: 'CatsController'
-    )
-    .state('edit.about',
-        url: "edit/about"
-        templateUrl: '/assets/cats/edit/edit_cat_about.html.slim'
         controller: 'CatsController'
     )
 

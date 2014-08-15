@@ -1,18 +1,16 @@
 #writer-sarah-app
   #body-show-block.center-block  ng-init="getTitle(); getArticles(); getCat()"
     .ws-body-content-div
-        /h4.ws-body-title
-          | {{getTitle()}}
-        /p.ws-category-descript
-          span style="color: #777;  position: absolute; margin-left: -14px; " -
-          | {{ cat.descript }}
+      /h4.ws-body-title
+        | {{getTitle()}}
+      /p.ws-category-descript
+        span style="color: #777;  position: absolute; margin-left: -14px; " -
+        | {{ cat.descript }}
 
-        img.body-img.ws-about-descript src="#"
-        div.ws-article-list id="article_{{article.id}}" ng-repeat="article in articles track by $index" ng-hide="article == null"
+      div.ws-article-list id="article_{{article.id}}" ng-repeat="article in articles track by $index" ng-hide="article == null"
 
+        a href="{{article.article_link}} " editable-text="article.title" onbeforesave="validateTitle($data, article)" e-form="textBtnForm" ng-hide="editableForm.$visible"
+          | {{article.title  }}
+        span.ws-article-descript ng-hide="editableForm.$visible" &nbsp - {{article.descript}}
 
-          a href="{{article.article_link}} " editable-text="article.title" onbeforesave="validateTitle($data, article)" e-form="textBtnForm" ng-hide="editableForm.$visible"
-            | {{article.title  }}
-          span.ws-article-descript ng-hide="editableForm.$visible" &nbsp - {{article.descript}}
-
-        img.body-img2.ws-about-descript src="https://s3-us-west-1.amazonaws.com/writersarahbucket/writersarah_picture.jpg"
+    .ws-body-content-div

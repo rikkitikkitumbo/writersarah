@@ -16,18 +16,18 @@
 #writer-sarah-app {
   clear: both;
   .greg{
-    width: 63%;
+    width: 66%;
     margin: auto;
-    @media(max-width: 767px){
+    @media(max-width: 1199px){
       width: 100%;
     }
   }
   #ws-title-bar{
-    padding: 17px 30px;
+    padding: 19px 30px;
     clear: both;
-    border-radius: 5px;
-    margin: 11px auto 90px;
     display: inline-block;
+    border-radius: 6px;
+    margin: 11px auto 90px;
     @media(max-width: 767px){
     }
   }
@@ -35,16 +35,35 @@
     background: -webkit-linear-gradient(#efefef, #cbcbcb); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#efefef, #cbcbcb); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#efefef, #cbcbcb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #ccc);
+    background: linear-gradient(#efefef, #eee);
     box-shadow: 2px 2px 6px 2px #999;
-
   }
 
+  .ws-contact{
+    div{
+      display: inline-block;
+    }
+  }
+
+  .ws-title-img{
+    display: block;
+    height: 300px;
+    width: 250px;
+    box-shadow: 2px 2px 7px 2px #aaa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    @media(max-width: 991px){
+      height: 200px;
+      width: 200px;
+    }
+  }
 
   .ws-about-div{
-    font-size: 15px;
+    font-size: 14px;
     color: #000;
-    padding: 0 20px;
+    padding: 0 10px;
+    display: inline-block;
     .a{
       padding: -1px;
       margin-left: -4px;
@@ -58,11 +77,6 @@
     }
   }
 
-
-
-  .ws-a-big{
-    font-size: 22px;
-  }
 
   .ws-titlebar-font {
     font-size: 29px;
