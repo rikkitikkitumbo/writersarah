@@ -19,38 +19,25 @@
           a href="/"
             | Click here to see Public View
 
+    .greg
+      #ws-title-bar.ws-header-bg
+        /.ws-titlebar-font Sarah Miller
 
-    #ws-title-bar.ws-header-bg
-      /.ws-titlebar-font Sarah Miller
-
-      .ws-about-div
-        a.ws-titlebar-font href="mailto:sarahpetersmiller@gmail.com" target="_blank"
-          | Sarah Miller
-        | &nbsp has written &nbsp
-        a.a ui-sref="edit.show({title: 'Press'})" 100's of articles.
-        | &nbsp She has also written &nbsp
-        a.a ui-sref="edit.show({title: 'Novels'})" 2 novels
-        | &nbsp and has done &nbsp
-        a.a ui-sref="edit.show({title: 'Corporate Copyright'})" corporate copyright
-        | &nbsp work.
-
-    #ws-sm-title-bar.ws-header-bg
-      /.ws-titlebar-font Sarah Miller
-
-      .ws-about-div
-        a.a.ws-a-big href="mailto:sarahpetersmiller@gmail.com" target="_blank"
-          | Sarah Miller
-        | &nbsp has written &nbsp
-        a.a ui-sref="edit.show({title: 'Press'})" 100's of Articles.
-        | &nbsp She has also written &nbsp
-        a.a ui-sref="edit.show({title: 'Novels'})" 2 novels
-        | &nbsp and has done &nbsp
-        a.a ui-sref="edit.show({title: 'Corporate Copyright'})" corporate copyright
-        | &nbsp work.
+        .ws-about-div
+          a.ws-titlebar-font ui-sref="edit.about"
+            | Sarah Miller
+          | &nbsp has written &nbsp
+          a.a ui-sref="edit.show({title: 'Press'})" 100's of articles.
+          | &nbsp She has also written &nbsp
+          a.a ui-sref="edit.show({title: 'Novels'})" 2 novels
+          | &nbsp and has done &nbsp
+          a.a ui-sref="edit.show({title: 'Corporate Copyright'})" corporate copyright
+          | &nbsp work.
 
 
-    .ui-view-container
-      div ui-view="" class="ws-fade-inout"
+
+        .ui-view-container
+          div ui-view="" class="ws-fade-inout"
 
 .body_content_div style="text-align:center; color: red; font-size: 18px; background: #fff;" ng-hide="user_authenticated()"
   | You aren't logged in. &nbsp

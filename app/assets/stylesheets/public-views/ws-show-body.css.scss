@@ -1,13 +1,8 @@
 #writer-sarah-app {
   .ws-body-content-div {
-    background: -webkit-linear-gradient(#efefef, #cbcbcb); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#efefef, #cbcbcb); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#efefef, #cbcbcb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #ddd);
-    box-shadow: 2px 2px 6px 2px #999;
-    border-radius: 3px;
-    padding: 10px 10px 15px 10px;
-    margin-top: 21px;
+    border-top: 3px solid #ccc;
+    padding: 21px 11px 11px 11px;
+    margin-top: 11px;
   }
 
   .body-img{
@@ -15,8 +10,19 @@
     width: 350px;
     float: right;
     margin: 15px 30px 0 30px;
-    @media (max-width: 767px){
+    @media (max-width: 991px){
       display: none;
+    }
+  }
+  .body-img2{
+    display: none;
+    @media (max-width: 991px){
+      height: 350px;
+      width: 350px;
+      display: block;
+      position: relative;
+      float: none;
+      margin: 21px auto;
     }
   }
 
@@ -41,7 +47,7 @@
 
   .ws-article-list {
     list-style-type: none;
-    margin: 10px 0 0 70px;
+    margin: 10px 0 0 40px;
     text-align: left;
     @media (max-width: 767px) {
         margin: 2px 4px;
@@ -51,8 +57,8 @@
       color: #444;
       border-bottom: 1px dashed #444;
       &:hover{
-        color: #333;
-        border-bottom: 2px solid #333;
+        color: #555;
+        border-bottom: 1px solid #555;
       }
     }
   }

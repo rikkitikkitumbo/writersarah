@@ -12,7 +12,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    -webkit-transition: all .7s ease-in-out;
+  /*  -webkit-transition: all .7s ease-in-out;
     -moz-transition: all .7s ease-in-out;
     -o-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
@@ -28,7 +28,6 @@
 
   [ui-view].ng-leave {
     opacity: 1;
-    /*padding-left: 0px;*/
   }
 
   [ui-view].ng-leave-active {

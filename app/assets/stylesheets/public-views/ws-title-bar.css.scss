@@ -15,23 +15,34 @@
 
 #writer-sarah-app {
   clear: both;
+  .greg{
+    width: 63%;
+    margin: auto;
+    @media(max-width: 767px){
+      width: 100%;
+    }
+  }
   #ws-title-bar{
-    padding: 3px 0;
+    padding: 17px 30px;
     clear: both;
-
+    border-radius: 5px;
+    margin: 11px auto 90px;
+    display: inline-block;
+    @media(max-width: 767px){
+    }
   }
   .ws-header-bg {
     background: -webkit-linear-gradient(#efefef, #cbcbcb); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#efefef, #cbcbcb); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#efefef, #cbcbcb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #eee);
+    background: linear-gradient(#fff, #ccc);
     box-shadow: 2px 2px 6px 2px #999;
 
   }
 
 
   .ws-about-div{
-    font-size: 17px;
+    font-size: 15px;
     color: #000;
     padding: 0 20px;
     .a{
@@ -42,7 +53,7 @@
       border-bottom: 1px dashed #999;
       &:hover {
         color: #444;
-        border-bottom: 2px solid #444;
+        border-bottom: 1px solid #444;
       }
     }
   }
@@ -54,16 +65,15 @@
   }
 
   .ws-titlebar-font {
-    font-size: 37px;
-    margin: 0;
+    font-size: 29px;
     padding: 0px 5px 0px 5px;
     text-align: left;
     font-weight: bold;
+    border-bottom: 1px dashed #aaa;
     color: #333;
-    border-bottom: 1px dashed #999;
     &:hover{
       color: #666;
-      border-bottom: 2px solid #666;
+      border-bottom: 1px solid #666;
     }
   }
 

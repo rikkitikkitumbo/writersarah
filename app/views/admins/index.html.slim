@@ -7,7 +7,9 @@ head
   meta name="viewport" content="width=device-width, initial-scale=1.0"
   = csrf_meta_tags
 
-  <link href='https://s3-us-west-1.amazonaws.com/writersarahbucket/allcss.css' rel='stylesheet' type='text/css'>
-  <script src="https://s3-us-west-1.amazonaws.com/writersarahbucket/edit.min.js"></script>
+  //<link href='https://s3-us-west-1.amazonaws.com/writersarahbucket/allcss.css' rel='stylesheet' type='text/css'>
+  //<script src="https://s3-us-west-1.amazonaws.com/writersarahbucket/edit.min.js"></script>
+  =stylesheet_link_tag 'application'
+  =javascript_include_tag 'editfiles'
 
 div ng-app="WriterSarah" ui-view="" ng-init="authenticated = '#{@user_authenticated}'; user_email= '#{@user_email}'"

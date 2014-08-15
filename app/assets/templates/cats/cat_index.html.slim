@@ -13,35 +13,19 @@
       | Edit the Website :)
 
 #writer-sarah-app
-  #ws-title-bar.ws-header-bg
-    /.ws-titlebar-font Sarah Miller
+  .greg
+    #ws-title-bar.ws-header-bg
+      .ws-about-div
+        a.ws-titlebar-font ui-sref="app.about"
+          | Sarah Miller
+        | &nbsp has written &nbsp
+        a.a ui-sref="app.show({title: 'Press'})" 100's of articles.
+        | &nbsp She has also written &nbsp
+        a.a ui-sref="app.show({title: 'Novels'})" 2 novels
+        | &nbsp and has done &nbsp
+        a.a ui-sref="app.show({title: 'Corporate Copyright'})" corporate copyright
+        | &nbsp work.
+      .ui-view-container
+        div ui-view="" class="ws-fade-inout"
 
-    .ws-about-div
-      a.ws-titlebar-font ui-sref="app.about"
-        | Sarah Miller
-      | &nbsp has written &nbsp
-      a.a ui-sref="app.show({title: 'Press'})" 100's of articles.
-      | &nbsp She has also written &nbsp
-      a.a ui-sref="app.show({title: 'Novels'})" 2 novels
-      | &nbsp and has done &nbsp
-      a.a ui-sref="app.show({title: 'Corporate Copyright'})" corporate copyright
-      | &nbsp work.
-
-  #ws-sm-title-bar.ws-header-bg
-    /.ws-titlebar-font Sarah Miller
-
-    .ws-about-div
-      a.a.ws-a-big href="mailto:sarahpetersmiller@gmail.com" target="_blank"
-        | Sarah Miller
-      | &nbsp has written &nbsp
-      a.a ui-sref="app.show({title: 'Press'})" 100's of Articles.
-      | &nbsp She has also written &nbsp
-      a.a ui-sref="app.show({title: 'Novels'})" 2 novels
-      | &nbsp and has done &nbsp
-      a.a ui-sref="app.show({title: 'Corporate Copyright'})" corporate copyright
-      | &nbsp work.
-
-
-  .ui-view-container
-    div ui-view="" class="ws-fade-inout"
 
