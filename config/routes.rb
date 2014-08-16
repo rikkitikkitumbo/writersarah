@@ -13,6 +13,7 @@ Writersarah::Application.routes.draw do
     end
   end
 
+  get "articles", to: "press#index"
   get "press", to: "press#index"
   get "novels", to: "novels#index"
   get "copyright", to: "copyright#index"
