@@ -1,10 +1,10 @@
 greg = () ->
-    if window.location.toString() == "http://still-basin-3821.herokuapp.com/#/edit/about"
-        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/about")
-    else if window.location.toString() == "http://still-basin-3821.herokuapp.com/#edit/about"
-        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/about")
-    else if window.location.toString() == "http://still-basin-3821.herokuapp.com/admin/#/about"
-        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/about")
+    if window.location.toString() == "http://still-basin-3821.herokuapp.com/#/edit/category/Press"
+        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/category/Press")
+    else if window.location.toString() == "http://still-basin-3821.herokuapp.com/#edit/category/Press"
+        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/category/Press")
+    else if window.location.toString() == "http://still-basin-3821.herokuapp.com/admin/#/category/Press"
+        window.location.replace("http://still-basin-3821.herokuapp.com/admin/#/edit/category/Press")
 greg()
 
 
@@ -12,8 +12,8 @@ greg()
 WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $urlRouterProvider) ->
 
     $urlRouterProvider
-    .when('', '/category/Press')
-    .otherwise('/category/Press')
+    .when('/','edit/category/Press')
+    .otherwise('edit/category/Press')
 
     $stateProvider
 
@@ -41,5 +41,4 @@ WriterSarah.config ["$stateProvider", "$urlRouterProvider", ($stateProvider, $ur
         templateUrl: '/assets/cats/edit/edit_cat_show.html.slim'
         controller: 'CatsController'
     )
-
 ]

@@ -1,6 +1,7 @@
 Writersarah::Application.routes.draw do
 
   devise_for :users
+  devise_scope :user do get "users/sign_out" => "devise/sessions#destroy" end
 
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
@@ -12,6 +13,9 @@ Writersarah::Application.routes.draw do
     end
   end
 
+  get "press", to: "press#index"
+  get "novels", to: "novels#index"
+  get "copyright", to: "copyright#index"
   get "admin", to: "admins#index"
   get "allarticles", to: "allarticles#index"
   resources :allarticles
@@ -21,7 +25,7 @@ Writersarah::Application.routes.draw do
   end
 
 
-  root to: 'cats#index'
+  root to: 'press#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

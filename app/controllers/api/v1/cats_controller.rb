@@ -6,9 +6,7 @@ class Api::V1::CatsController < ApiController
       respond_with Cat.all.sort_by{|cat| cat.id}, root: false, each_serializer: CatSerializer
     end
 
-    def create
-      respond_with Product.create(params[:product])
-    end
+
 
 
 
