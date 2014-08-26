@@ -7,7 +7,7 @@ class CopyrightController < ApplicationController
     artic = apply_scopes(Article).where(cat_id: 2)
     cat_order_array = (Cat.find(2).order_array).split(",").map { |s| s.to_i } #.split(",").map(&:to_i) for later ruby versions
     @articles = artic.sort_by{|x| cat_order_array.index(x.id)}
-
+    expires_in 3.hours, :public => true
   end
 
 end

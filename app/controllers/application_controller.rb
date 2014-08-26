@@ -8,4 +8,6 @@ class ApplicationController < ActionController::Base
     "/#/edit/category/Press"
   end
 
+
+
 end

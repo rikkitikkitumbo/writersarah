@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     artic = apply_scopes(Article).where(cat_id: 1)
     cat_order_array = (Cat.find(1).order_array).split(",").map { |s| s.to_i } #.split(",").map(&:to_i) for later ruby versions
     @articles = artic.sort_by{|x| cat_order_array.index(x.id)}
-
+    expires_in 3.hours, :public => true
   end
 
 end
